@@ -1,0 +1,39 @@
+# 日本語TTS + EmoKnob感情制御システムの依存関係
+
+# 基本的な依存関係
+torch>=1.9.0
+torchaudio>=0.9.0
+numpy>=1.21.0
+librosa>=0.8.0
+soundfile>=0.10.0
+scipy>=1.7.0
+
+# 日本語テキスト処理
+jaconv>=0.3.0
+fugashi>=1.2.0
+unidic-lite>=1.0.8
+
+# 感情制御・機械学習
+scikit-learn>=1.0.0
+pandas>=1.3.0
+
+# 追加の音声処理
+resampy>=0.2.2
+pyworld>=0.3.0
+
+# 可視化・デバッグ
+matplotlib>=3.5.0
+seaborn>=0.11.0
+jupyter>=1.0.0
+
+# 日本語TTSシステム (選択的にインストール)
+# VITS日本語実装
+# git+https://github.com/tonnetonne814/MB-iSTFT-VITS-44100-Ja.git
+
+# Kotoba-Speech (HuggingFace)
+# transformers>=4.20.0
+# huggingface-hub>=0.10.0
+
+# オプション: GPU加速
+# torch>=1.9.0+cu111 -f https://download.pytorch.org/whl/torch_stable.html
+# torchaudio>=0.9.0+cu111 -f https://download.pytorch.org/whl/torch_stable.html 
